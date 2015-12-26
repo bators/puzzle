@@ -1,0 +1,2 @@
+C:\Users\NB HP\Desktop\BuildProcessTemplates\Puzzle\Puzzle\Puzzle\bin\Debug\Puzzle.exe.config
+C:\Users\NB HP\Source\Repos\puzzle\Puzzle\Puzzle\bin\Debug\Puzzle.exe.config
