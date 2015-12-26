@@ -79,7 +79,6 @@
     <Compile Include="Model\FragmentCreator.cs" />
     <Compile Include="Model\Coppy.cs" />
     <Compile Include="Model\Interface\AbstractBridge.cs" />
-    <Compile Include="Model\Interface\ICreateFragment.cs" />
     <Compile Include="Model\Interface\Idatabridge.cs" />
     <Compile Include="Model\Interface\IImageHolder.cs" />
     <Compile Include="View\UserControl1.xaml.cs">
@@ -88,7 +87,6 @@
     <Compile Include="View\UserControl2.xaml.cs">
       <DependentUpon>UserControl2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\ControlViewModel.cs" />
     <Compile Include="ViewModel\DragAndDrop.cs" />
     <Compile Include="ViewModel\Drop.cs" />
     <Compile Include="ViewModel\ImageConverter.cs" />
