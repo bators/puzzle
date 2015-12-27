@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.IO;
 using System.Collections;
+using Puzzle.Model.Interface;
 
 
 namespace Puzzle.Model
 {
-    public class FragmentCreator :Coppy, ICreateFragment
+    public class FragmentCreator : Coppy, ICreateFragment
     {
 
-        Image _img = Image.FromFile("C:/Users/NB HP/Desktop/ПРОГА2курс/BuildProcessTemplates/Puzzle/Puzzle/Img/444.jpg");
+        Image _img = Image.FromFile("C:/Users/NB HP/Source/Repos/NewRepo/Puzzle/Puzzle/Img/444.jpg");
      
         public FragmentCreator()
         {

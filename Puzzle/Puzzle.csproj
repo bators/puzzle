@@ -79,6 +79,7 @@
     <Compile Include="Model\FragmentCreator.cs" />
     <Compile Include="Model\Coppy.cs" />
     <Compile Include="Model\Interface\AbstractBridge.cs" />
+    <Compile Include="Model\Interface\ICreateFragment.cs" />
     <Compile Include="Model\Interface\Idatabridge.cs" />
     <Compile Include="Model\Interface\IImageHolder.cs" />
     <Compile Include="View\UserControl1.xaml.cs">
@@ -142,15 +143,6 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Img\1I32JTLXK0IU1321647500323.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Img\111.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Img\1.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Img\444.jpg" />
