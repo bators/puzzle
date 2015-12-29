@@ -13,8 +13,9 @@ namespace Puzzle.Model
 {
     public class FragmentCreator : Coppy, ICreateFragment
     {
+        
 
-        Image _img = Image.FromFile("C:/Users/NB HP/Source/Repos/NewRepo/Puzzle/Puzzle/Img/444.jpg");
+        Image _img = Image.FromFile(@"Img/444.jpg");
      
         public FragmentCreator()
         {

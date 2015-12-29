@@ -4,22 +4,18 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media.Imaging;
 
 namespace Puzzle.Model.Interface
 {
- public   class AbstractBridge:Idatabridge
+ public   class AbstractBridge
  {
-     private IImageHolder _imtHolder;
-     public IImageHolder ImgHolder
-     {
-         get
-         {
-             return _imtHolder;
-         }
-     }
+    
+   
      public int Rows
      {
          get
@@ -47,18 +43,20 @@ namespace Puzzle.Model.Interface
              throw new NotImplementedException();
          }
      }
-     public AbstractBridge(IImageHolder ImgHolder)
-        {
-            if (ImgHolder == null) throw new ArgumentNullException("ImgHolder");
-
-            _imtHolder = ImgHolder;
-        }
+    
         
 
    
- public bool SaveCurrentPuzleToFile(string path2 = null)
-        {
-            return ImgHolder.SaveImg(path2);
+ public string SaveCurrentPuzleToFile(string path2 = null)
+     {
+         BitmapImage Img = new BitmapImage(new Uri("C:/Users/NB HP/Source/Repos/NewRepo/Puzzle/Puzzle/Img/444.jpg"));
+         Guid photoID = System.Guid.NewGuid();
+         string photolocation = photoID.ToString() + ".jpg";  //file name
+         FileStream filestream = new FileStream(photolocation, FileMode.Create);
+         JpegBitmapEncoder encoder = new JpegBitmapEncoder();
+         encoder.Frames.Add(BitmapFrame.Create(Img));
+         encoder.Save(filestream);
+         return path2;
         }
         
 

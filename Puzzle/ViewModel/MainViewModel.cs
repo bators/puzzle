@@ -17,8 +17,8 @@ namespace Puzzle.ViewModel
 {
     public class MainViewModel : ViewModelBase
     {
-        Idatabridge _dataBridge;
-        public MainViewModel(Idatabridge bridge)
+        AbstractBridge _dataBridge;
+        public MainViewModel(AbstractBridge bridge)
         {
 
             if (bridge == null) throw new ArgumentNullException("bridge");
